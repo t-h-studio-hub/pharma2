@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "first Pharmacy",
+    "location": "Main Street, New York",
+    "phone": "+1 234 567 890"
+  },
+  {
+    "id": "2",
+    "name": "second Pharmacy",
+    "location": "Downtown Avenue",
+    "phone": "+1 987 654 321"
+  },
+  {
+    "id": "3",
+    "name": "third Pharmacy",
+    "location": "Uptown Avenue",
+    "phone": "+1 987 654 321"
+  },
+  {
+    "id": "4",
+    "name": "forth Pharmacy",
+    "location": "City Center",
+    "phone": "+1 987 654 321"
+  },
+  {
+    "id": "5",
+    "name": "fifth Pharmacy",
+    "location": "Green Road 12",
+    "phone": "+1 555 222 111"
+  }
+]
