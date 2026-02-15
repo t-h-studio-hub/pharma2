@@ -1,5 +1,7 @@
 package com.spinex.pharma
 
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +28,18 @@ class DistrictPharmacyAdapter(
         holder.pharmacyName.text = pharmacy.name
         holder.pharmacyLocation.text = pharmacy.location
         holder.pharmacyPhone.text = pharmacy.phone
+
+        holder.pharmacyLocation.setOnClickListener {
+            val mapIntent = Intent(holder.itemView.context, MapActivity::class.java).apply {
+                putExtra(MapActivity.EXTRA_LOCATION, pharmacy.location)
+            }
+            holder.itemView.context.startActivity(mapIntent)
+        }
+
+        holder.pharmacyPhone.setOnClickListener {
+            val dialIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${pharmacy.phone}"))
+            holder.itemView.context.startActivity(dialIntent)
+        }
     }
 
     override fun getItemCount(): Int {

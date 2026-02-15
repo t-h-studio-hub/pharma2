@@ -33,14 +33,16 @@
             android:textColor="@android:color/darker_gray"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="all" />
+            android:clickable="true"
+            android:focusable="true" />
 
         <TextView
             android:id="@+id/pharmacyPhone"
             android:textColor="@android:color/holo_blue_dark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="all" />
+            android:clickable="true"
+            android:focusable="true" />
 
     </LinearLayout>
 
